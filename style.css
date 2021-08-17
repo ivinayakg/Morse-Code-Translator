@@ -5,13 +5,20 @@
   font-family: "Roboto", sans-serif;
 }
 
+.canvas {
+  margin: 0%;
+  padding: 0%;
+  background-color: rgba(10, 10, 10, 0.7);
+}
+
 :root {
-  --primary: #f1f1f1;
+  --primary: rgba(241, 241, 241, 0.7);
   --secondary: #0a0a0a;
 }
 
 body {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
+  background-image: url(./morse.jpg);
 }
 
 .section {
@@ -37,15 +44,15 @@ textarea {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 1rem;
-  background-color: var(--primary);
-  color: #0a0a0a;
-  border: none;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 0.15rem solid var(--primary);
 }
 
 .header,
 .footer {
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 .content {
